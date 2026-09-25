@@ -173,14 +173,14 @@ jobs:
       - name: Build and tag image
         run: |
           docker build \
-            -t MineshShaw/devsecops-cicd:${{ github.sha }} \
-            -t MineshShaw/devsecops-cicd:latest \
+            -t mineshshaw/devsecops-cicd:${{ github.sha }} \
+            -t mineshshaw/devsecops-cicd:latest \
             .
 
       - name: Push image
         run: |
-          docker push MineshShaw/devsecops-cicd:${{ github.sha }}
-          docker push MineshShaw/devsecops-cicd:latest
+          docker push mineshshaw/devsecops-cicd:${{ github.sha }}
+          docker push mineshshaw/devsecops-cicd:latest
 
 
   # ========================================
